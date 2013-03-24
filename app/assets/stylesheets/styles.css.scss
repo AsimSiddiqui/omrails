@@ -24,3 +24,29 @@ body {
 	}
 }
 
+/* Required for jQuery Masonry */
+
+.box {
+	margin: 5px;
+	padding: 5px;
+	font-size: 11px;
+	line-height: 1.4cm;
+	float: left;
+	-webkit-border-radius: 5px;
+	-moz-border-radus: 5px;
+	border-radus: 5px;
+	box-shadow: 2px 2px 10px #444;
+	width: 214px;
+}
+
+.box img {
+	display: block;
+	width: 100%;
+	-webkit-border-radius: 5px;
+	-moz-border-radus: 5px;
+	border-radus: 5px;
+}
+
+.description {
+	margin: 5px 0 5px;
+}
