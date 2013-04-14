@@ -69,13 +69,13 @@ Omrails::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
 # Paperclip should use Amazon S3 on Heroku
-config.paperclip_defaults = {
+  config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
-        :bucket => "asimrails",
-        :access_key_id => "AKIAJGLCQS4QHLCPYSIQ",
-        :secret_access_key => "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"
+      :bucket => ENV['AWS_BUCKET'],
+      :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
-}
+  }
 
 end
